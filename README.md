@@ -2,13 +2,19 @@ All-in-one installation script to install disco on a clean CentOS 7 VM
 
 # How to use
 1. Log in as root (required)
-2. Run this stuff
+2. Run this stuff:
 ```
 curl -O https://raw.githubusercontent.com/ARMmaster17/install-disco/master/install-disco.sh
 chmod a+x install-disco.sh
 ./install-disco.sh
 ```
 DONE!
+
+# How to survive a reboot
+If you need to reboot your machine, here's how to start the Disco service back up:
+
+1. Log in as root (required)
+2. `bin/disco start`
 
 # Advanced options
 This script by default installs Erlang, Python, and of course Disco. When it installs Disco, it uses the "node-install" option. This assumes that you already have a "master" node already running on your network. To install a master node, change the line `make node-install` to `make install`.
