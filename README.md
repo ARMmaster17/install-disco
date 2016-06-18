@@ -4,7 +4,6 @@ All-in-one installation script to install disco on a clean CentOS 7 VM
 1. Log in as root (required)
 2. Run this stuff
 ```
-yum install curl
 curl -O https://raw.githubusercontent.com/ARMmaster17/install-disco/master/install-disco.sh
 chmod a+x install-disco.sh
 ./install-disco.sh
