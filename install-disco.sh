@@ -14,5 +14,4 @@ make install-node
 cd lib
 python setup.py install --user
 cd ..
-bin/disco start
 ssh-keygen -N '' -f ~/.ssh/id_dsa
